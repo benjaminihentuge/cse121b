@@ -246,7 +246,7 @@ footer {
     color: #eee;
 }
 
-#temples {
+#temples  #quotes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: .5rem;
@@ -254,7 +254,7 @@ footer {
     margin-bottom: 3rem;
 }
 
-#temples article {
+#temples  #quotes article {
     height: 250px;
     margin: .5rem;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -266,13 +266,13 @@ footer {
     justify-content: center;
 }
 
-#temples h4 {
+#temples,  #quotes h4 {
     color: navy;
     font-size: smaller;
 }
 
 
-#temples img {
+#temples, #quotes img {
     width: 250px;
     height: auto;
     box-shadow: 0 0 30px #777;
@@ -313,3 +313,27 @@ footer {
     }
 
 }
+
+.clock {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Text color */
+    background-color: #f4f4f4; /* Background color */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 200px; /* Adjust the width to fit your layout */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+
+
+body {
+    
+    background-image: url('./images/coolbackground.jpg');
+    
+}
+
+
+

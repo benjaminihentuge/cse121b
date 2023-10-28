@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"> <!-- Link to the main.css file from the first code snippet -->
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="w01-task.html">W1 Task</a></li>
+          <li><a href="w03-task.html">W3 Task</a></li>
+          <li><a href="w04-task.html">W4 Task</a></li>
+          <li><a href="w05-task.html">W5 Task</a></li>
+          <li><a href="project.html" class="active">Project</a></li>
+        </ul>
+      </nav>
+    <main id="gridly">
+        <h1 class="appname">To-Do List Manager</h1>
+        <div class="add-task">
+            <input type="text" id="task" placeholder="Add a new task">
+            <button id="addButton">Add</button>
+        </div>
+        <div class="clock">
+            <div id="digitalClock"></div>
+        </div>
+        <ul id="taskList">
+            <!-- To-Do list items will be added here -->
+        </ul>
+      
+        <h2>Fetch Quotes by Topic</h2>
+        <select id="topicFilter" title="Choose a data filter.">
+            <option value="" disabled selected>Select a Topic</option>
+            <option value="Priorities">Priorities</option>
+            <option value="Time">Time</option>
+            <!-- Add more options for other topics -->
+        </select>
+
+      
+        <div id="quotes">
+            <!-- Quotes will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Project - To-Do List Manager | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script type="module" src="project.js"></script>
+</body>
+</html>
